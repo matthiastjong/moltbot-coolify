@@ -27,8 +27,7 @@ cat >"$CONFIG_FILE" <<EOF
       "token": "$TOKEN"
     },
     "controlUi":{
-        "dangerouslyDisableDeviceAuth":true,
-        "allowInsecureAuth": true
+        "enabled": true
     },
     "trustedProxies": [
       "*"
