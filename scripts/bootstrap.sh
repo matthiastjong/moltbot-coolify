@@ -95,4 +95,4 @@ if [ "${CLAWDBOT_PRINT_ACCESS:-1}" = "1" ]; then
   echo ""
 fi
 
-exec node dist/index.js gateway --force
+exec node dist/index.js gateway
