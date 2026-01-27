@@ -49,15 +49,18 @@ cat >"$CONFIG_FILE" <<EOF
       "streamMode": "partial"
     },
     "discord": {
+      "dmPolicy": "pairing",
       "groupPolicy": "allowlist"
     },
     "googlechat": {
+      "dmPolicy": "pairing",
       "groupPolicy": "allowlist"
     },
     "slack": {
       "mode": "socket",
       "webhookPath": "/slack/events",
       "userTokenReadOnly": true,
+      "dmPolicy": "pairing",
       "groupPolicy": "allowlist"
     },
     "signal": {
@@ -68,7 +71,9 @@ cat >"$CONFIG_FILE" <<EOF
       "dmPolicy": "pairing",
       "groupPolicy": "allowlist"
     },
-    "mattermost": {}
+    "mattermost": {
+      "dmPolicy": "pairing"
+    }
   },
   "agents": {
     "defaults": {
